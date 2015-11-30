@@ -25,7 +25,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           // 'public/compiled.js': 'public/worker-delegator.js'
-          'public/dist.js': 'src/*.js'
+          'public/dist.js': 'src/worker-delegator.js',
+          'public/worker.js': 'src/worker.js'
         }
       }
       ,options: {

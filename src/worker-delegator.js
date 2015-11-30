@@ -2,6 +2,7 @@ var myWorker = new Worker("worker.js");
 var promiseLib = require('when');
 
 var workerController = (function() {
+    'use strict';
     var promiseRegistry = [];
     var index = 0;
     myWorker.onmessage = function(e) {
@@ -44,7 +45,7 @@ function exampleFunction(argObj) {
         value = argObj[keys[i]];
         random = (Math.floor(Math.random() * 10) + 1) * 1000;
         setTimeout(function() {
-            console.log('Key: ' + this.key, 'Value: ' + this.value, 'Time: ' + this.random);
+            console.log('Key: ' + this.key + '. Value: ' + this.value + '. Time: ' + this.random);
         }.bind({key:key, value:value, random:random}),random);
         string += value + ' ';
     }
