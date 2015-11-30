@@ -1,0 +1,29 @@
+{
+  "name": "worker-test",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "^4.x",
+    "when": "^3.7.5"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "babelify": "6.0.1",
+    "babel": "^6.1.18",
+    "browserify": "^12.0.1",
+    "grunt": "~0.4.5",
+    "grunt-babel": "^6.0.0",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
