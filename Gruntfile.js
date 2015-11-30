@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     browserify: {
       dist: {
         files: {
-          // 'public/compiled.js': 'public/worker-delegator.js'
+          'public/worker-delegator-test.js': 'src/worker-delegator-test.js',
           'public/dist.js': 'src/worker-delegator.js',
           'public/worker.js': 'src/worker.js'
         }
